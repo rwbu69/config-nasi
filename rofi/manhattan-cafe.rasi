@@ -1,0 +1,70 @@
+* {
+    background:     #181825;
+    background-alt: #2B2A27;
+    foreground:     #E8DD4C;
+    primary:        #E8DD4C;
+    secondary:      #494541;
+    alert:          #C04040;
+    disabled:       #5BAFAF;
+
+    font: "JetBrainsMono Nerd Font 12";
+}
+
+window {
+    transparency: "real";
+    background-color: @background;
+    border: 2px;
+    border-color: @primary;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+mainbox {
+    padding: 15px;
+    text-color: @foreground;
+}
+
+inputbar {
+    padding: 10px;
+    background-color: @background-alt;
+    border-radius: 8px;
+    text-color: @foreground;
+}
+
+prompt {
+    text-color: @foreground;
+}
+
+entry {
+    text-color: @foreground;
+    placeholder-color: @disabled;
+}
+
+listview {
+    lines: 8;
+    scrollbar: false;
+    fixed-height: 0;
+    spacing: 5px;
+    text-color: @foreground;
+}
+
+element {
+    padding: 8px;
+    border-radius: 6px;
+    text-color: @foreground;
+}
+
+element selected {
+    background-color: @primary;
+    text-color: @secondary;
+}
+
+element urgent {
+    background-color: @alert;
+    text-color: @foreground;
+}
+
+element disabled {
+    background-color: @background-alt;
+    text-color: @disabled;
+}
