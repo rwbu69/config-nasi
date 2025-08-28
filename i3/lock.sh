@@ -1,0 +1,18 @@
+i3lock \
+  --image ~/Pictures/manhattan-cafe.png \
+  --inside-color=181825AA \
+  --ring-color=E8DD4CFF \
+  --line-color=00000000 \
+  --keyhl-color=E8DD4CFF \
+  --bshl-color=FF0000FF \
+  --separator-color=00000000 \
+  --verif-color=E8DD4CFF \
+  --wrong-color=FF0000FF \
+  --time-color=E8DD4CFF \
+  --date-color=FFFFFFFF \
+  --greeter-color=E8DD4CFF \
+  --indicator \
+  --clock \
+  --time-str="%H:%M" \
+  --date-str="%a, %d %b %Y" \
+  --greeter-text="Locked"

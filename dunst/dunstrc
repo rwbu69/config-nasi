@@ -1,0 +1,88 @@
+[global]
+    monitor = 0
+    follow = none
+
+    width = 340
+    height = (0, 300)
+    origin = top-right
+    offset = (20, 40)
+    scale = 0
+    notification_limit = 10
+
+    progress_bar = true
+    progress_bar_height = 10
+    progress_bar_frame_width = 0
+    progress_bar_min_width = 150
+    progress_bar_max_width = 300
+    progress_bar_corner_radius = 5
+    progress_bar_corners = all
+    icon_corner_radius = 10
+    icon_corners = all
+
+    indicate_hidden = yes
+    transparency = 15
+
+    padding = 14
+    horizontal_padding = 16
+    text_icon_padding = 10
+    frame_width = 0
+    frame_color = "#E8DD4C"
+    gap_size = 10
+    separator_height = 2
+    separator_color = auto
+
+    font = JetBrainsMono Nerd Font 11
+    line_height = 0
+    markup = full
+    format = "<b>%s</b>\n%b"
+    alignment = left
+    vertical_alignment = center
+    show_age_threshold = 60
+    stack_duplicates = true
+    hide_duplicate_count = false
+    show_indicators = no
+
+    enable_recursive_icon_lookup = true
+    icon_theme = Papirus-Dark
+    icon_position = left
+    min_icon_size = 32
+    max_icon_size = 64
+
+    dmenu = /usr/bin/dmenu -p 'Notification:'
+    browser = /usr/bin/xdg-open
+    always_run_script = true
+    title = Dunst
+    class = Dunst
+
+    corner_radius = 14
+    corners = all
+
+    ignore_dbusclose = false
+    force_xwayland = false
+    force_xinerama = false
+
+[experimental]
+    per_monitor_dpi = false
+
+[urgency_low]
+    background = "#1e1e2e"
+    foreground = "#4AAE9B"
+    frame_color = "#4AAE9B"
+    timeout = 5
+    default_icon = dialog-information
+
+[urgency_normal]
+    background = "#282626"
+    foreground = "#f4cccc"
+    frame_color = "#E8DD4C"
+    timeout = 8
+    override_pause_level = 30
+    default_icon = dialog-information
+
+[urgency_critical]
+    background = "#2e2a29"
+    foreground = "#FFFFFF"
+    frame_color = "#E53935"
+    timeout = 0
+    override_pause_level = 60
+    default_icon = dialog-warning

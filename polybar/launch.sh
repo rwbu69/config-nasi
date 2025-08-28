@@ -1,16 +1,9 @@
-#!/bin/bash
+#!/usr/bin/env bash
+pkill -x polybar 2>/dev/null
+sleep 0.2
 
-# Terminate already running bars
-killall -q polybar
-
-# Wait until the processes have been shut down
-while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
-
-# Launch bar on all monitors
-if type "xrandr"; then
-    for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
-        MONITOR=$m polybar example &
-    done
-else
-    polybar example &
-fi
+# For each connected monitor, start both bars
+for m in $(polybar -m | cut -d: -f1); do
+  MONITOR="$m" polybar -q top -c ~/.config/polybar/config.ini &
+  MONITOR="$m" polybar -q bottom -c ~/.config/polybar/config.ini &
+done
