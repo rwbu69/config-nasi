@@ -2,7 +2,7 @@
 # system-inventory.sh
 # Generate a full list of installed packages and apps into ~/Github/config-nasi
 
-OUTDIR=~/Github/config-nasi/system-inventory
+OUTDIR=~/Github/config-nasi/system-inventory/
 mkdir -p "$OUTDIR"
 
 echo "=== Saving system inventory to $OUTDIR ==="
