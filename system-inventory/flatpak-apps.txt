@@ -1,0 +1,1 @@
+Sober	org.vinegarhq.Sober	1.5.4	stable	system

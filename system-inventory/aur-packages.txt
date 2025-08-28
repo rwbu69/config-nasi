@@ -1,0 +1,15 @@
+betterlockscreen 4.4.0-1
+cbonsai 1.4.2-1
+gruvbox-material-icon-theme-git r25.bb306ae97-1
+i3lock-color 2.13.c.5-3
+intellij-idea-ultimate-edition 2025.2-1
+packettracer 8.2.2-1
+papirus-folders 1.14.0-1
+postman-bin 11.59.4-1
+scenefx0.4 0.4.1-2
+swayfx 0.5.3-4
+swaylock-effects 1.7.0.0-4
+vesktop-bin 1.5.8-1
+visual-studio-code-bin 1.103.2-1
+winbox 4.0beta29-1
+zoom 6.5.8-1
