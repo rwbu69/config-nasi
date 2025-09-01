@@ -26,6 +26,10 @@ exec --no-startup-id dex --autostart --environment i3
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
 
+
+
+#exec --no-startup-id xrandr --output eDP --auto --primary --output HDMI-A-0 --mode 1280x720 --rate 60 --left-of eDP
+
 # Launch Polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 #exec_always --no-startup-id $HOME/polybar-collection/launch.sh
