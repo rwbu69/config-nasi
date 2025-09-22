@@ -35,7 +35,7 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 #exec_always --no-startup-id $HOME/polybar-collection/launch.sh
 
 # picom
-exec_always --no-startup-id picom --experimental-backends --config ~/.config/picom/picom.conf
+exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
@@ -206,7 +206,7 @@ bindsym $mod+r mode "resize"
 
 exec_always --no-startup-id dunst
 
-exec_always --no-startup-id feh --bg-fill ~/Downloads/manhattan-cafe-sfw.png
+exec_always --no-startup-id feh --bg-fill ~/Downloads/manhattan-wallpaper.png
 
 # Launch Browser
 bindsym $mod+o exec xdg-open https://www.youtube.com
@@ -225,9 +225,9 @@ bindsym Shift+Print exec flameshot gui --path ~/Pictures/Screenshots/ --delay 50
 bindsym $mod+Shift+Print exec flameshot gui --window --path ~/Pictures/Screenshots/
 
 # Gaps
-gaps inner 10
-gaps outer 5
-gaps top 40
+gaps inner 2
+gaps outer 2
+gaps top 30
 gaps bottom 40
 
 # Application-Rules 
@@ -236,11 +236,11 @@ for_window [class="vesktop"] move to workspace $ws3
 
 for_window [class="steam"] move to workspace $ws2
 
-for_window [floating] resize set 1200 800
+for_window [floating] resize set 1600 900
 
 # class                 border      background  text        indicator   child_border
-client.focused          #008B8B     #282626     #f4cccc     #282626     #282626
-client.focused_inactive #008B8B     #282626     #f4cccc     #282626     #282626
-client.unfocused        #008B8B     #282626     #f4cccc     #282626     #282626
-client.urgent           #008B8B     #282626     #f4cccc     #282626     #282626
-client.placeholder      #008B8B     #282626     #f4cccc     #282626     #282626
+client.focused          #5c5f77     #282626     #e0e0e0     #86cecb     #5c5f77
+client.focused_inactive #5c5f77     #282626     #e0e0e0     #86cecb     #5c5f77
+client.unfocused        #5c5f77     #282626     #e0e0e0     #86cecb     #5c5f77
+client.urgent           #5c5f77     #282626     #e0e0e0     #86cecb     #5c5f77
+client.placeholder      #5c5f77     #282626     #e0e0e0     #86cecb     #5c5f77
