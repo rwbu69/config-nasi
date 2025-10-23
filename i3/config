@@ -49,7 +49,11 @@ exec --no-startup-id nm-applet
 exec_always --no-startup-id udiskie --tray --no-automount
 
 #redshift 
-exec --no-startup-id redshift 
+exec --no-startup-id redshift
+
+
+exec_always --no-startup-id greenclip daemon &
+
 # Kibod jepang
 
 exec --no-startup-id fcitx5 -d
@@ -129,6 +133,8 @@ bindsym $mod+space focus mode_toggle
 # focus the parent container
 bindsym $mod+a focus parent
 
+bindsym $mod+c exec --no-startup-id rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
+
 
 # focus the child container
 #bindsym $mod+d focus child
@@ -206,7 +212,7 @@ bindsym $mod+r mode "resize"
 
 exec_always --no-startup-id dunst
 
-exec_always --no-startup-id feh --bg-fill ~/Downloads/manhattan-wallpaper.png
+exec_always --no-startup-id feh --bg-fill ~/Downloads/manhattan-wallpaper-2.png
 
 # Launch Browser
 bindsym $mod+o exec xdg-open https://www.youtube.com
