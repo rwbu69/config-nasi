@@ -73,7 +73,7 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 # start a terminal
-bindsym $mod+Return exec kitty
+bindsym $mod+Return exec kitty 
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -212,7 +212,7 @@ bindsym $mod+r mode "resize"
 
 exec_always --no-startup-id dunst
 
-exec_always --no-startup-id feh --bg-fill ~/Downloads/manhattan-wallpaper-2.png
+exec_always --no-startup-id feh --bg-fill --brightness -30 --contrast 15 --gamma 1.1 ~/Github/wallpaper/suzululuwallpaper.jpg
 
 # Launch Browser
 bindsym $mod+o exec xdg-open https://www.youtube.com
@@ -242,11 +242,13 @@ for_window [class="vesktop"] move to workspace $ws3
 
 for_window [class="steam"] move to workspace $ws2
 
-for_window [floating] resize set 1600 900
+for_window [floating] resize set 1280 720
 
 # class                 border      background  text        indicator   child_border
-client.focused          #5c5f77     #282626     #e0e0e0     #86cecb     #5c5f77
-client.focused_inactive #5c5f77     #282626     #e0e0e0     #86cecb     #5c5f77
-client.unfocused        #5c5f77     #282626     #e0e0e0     #86cecb     #5c5f77
-client.urgent           #5c5f77     #282626     #e0e0e0     #86cecb     #5c5f77
-client.placeholder      #5c5f77     #282626     #e0e0e0     #86cecb     #5c5f77
+client.focused          #696969     #282626     #e0e0e0     #ffc0cb     #696969
+client.focused_inactive #696969     #282626     #e0e0e0     #ffc0cb     #696969
+client.unfocused        #696969     #282626     #e0e0e0     #ffc0cb     #696969
+client.urgent           #696969     #282626     #e0e0e0     #ffc0cb     #696969
+client.placeholder      #696969     #282626     #e0e0e0     #ffc0cb     #696969
+
+
